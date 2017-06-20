@@ -1,34 +1,24 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  Image,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableHighlight,
 } from 'react-native';
 
-export default class RNShimmerAndroid extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
+import Shimmer from 'reactnativeshimmerandroid';
+
+export default function RNShimmerAndroid(props) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Shimmer RNShimmerAndroid</Text>
+      <View>
+      
       </View>
-    );
-  }
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -38,16 +28,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  title: {
+    fontSize: 22,
+    fontWeight: '300',
+    marginBottom: 20,
   },
-  instructions: {
+  loading: {
+    marginVertical: 10,
+  },
+  loadingText: {
     textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    fontSize: 16,
+    fontWeight: '500',
+  },
+  reactLogo: {
+    width: 150,
+    height: 150,
   },
 });
 
 AppRegistry.registerComponent('RNShimmerAndroid', () => RNShimmerAndroid);
+

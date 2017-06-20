@@ -1,0 +1,42 @@
+{
+  "name": "react-native-shimmer-android",
+  "version": "0.2.1",
+  "description": "Simple shimmering effect in React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "ui",
+    "shimmer",
+    "activityindicator",
+    "indeterminate",
+    "spinner",
+    "animation"
+  ],
+  "author": {
+    "name": "sonalvishwakarma",
+    "email": "sonal.v@ziniostech.com"
+  },
+  "homepage": "https://github.com/sonalvishwakarma/react-native-shimmer-android.git",
+  "bugs": {
+    "url": "https://github.com/sonalvishwakarma/react-native-shimmer-android.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "git://github.com/sonalvishwakarma/react-native-shimmer-android.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.0.1"
+  }
+}
