@@ -1,18 +1,17 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import PropTypes from 'prop-types';
-import {
-  requireNativeComponent,
-} from 'react-native';
+import {requireNativeComponent} from 'react-native';
 
 Shimmer.propTypes = {
-  animating : PropTypes.bool.isRequired,
-  direction: PropTypes.oneOf(['up', 'down', 'left', 'right']).isRequired
+  animating : React.PropTypesPropTypes.bool,
+  direction: React.PropTypes.oneOf(['up', 'down', 'left', 'right'])
 }
 
+Shimmer.defaultProps = {
+  animating : true
+};
+
 export default class Shimmer extends Component {
-  static defaultProps = {
-    animating : true
-  };
 
   render() {
     const { direction, ...props } = this.props;

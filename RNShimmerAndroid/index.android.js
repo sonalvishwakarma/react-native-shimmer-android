@@ -8,14 +8,16 @@ import {
   TouchableHighlight,
 } from 'react-native';
 
-import Shimmer from 'reactnativeshimmerandroid';
+import Shimmer from './index';
 
 export default function RNShimmerAndroid(props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Shimmer RNShimmerAndroid</Text>
+      <Text style={styles.title}>Shimmer Example</Text>
       <View>
-      
+        <Shimmer style={styles.loading}>
+          <Text style={styles.loadingText}>Loading...</Text>
+        </Shimmer>
       </View>
     </View>
   );
