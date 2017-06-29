@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 import {
   View,
   StyleSheet,
@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-export default class Shimmer extends PureComponent {
+export default class Shimmer extends Component {
   constructor(props) {
     super(props);
     this.state = {
